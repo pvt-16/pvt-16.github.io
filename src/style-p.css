@@ -18,6 +18,18 @@ header {
     z-index: 1;
 }
 
+li {
+	margin: 10px;
+	padding: 10px;
+	background-color: #FFFFFF;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+	transition: box-shadow 0.2s ease-in-out;
+}
+li:hover {
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
 nav {
     display: flex;
     align-items: center;
@@ -40,8 +52,11 @@ nav a:hover {
 
 section {
     margin: 80px 0;
+    margin-bottom: 0px;
     padding: 0 20px;
 }
+
+/* About section styles */
 
 .about {
     display: flex;
@@ -49,7 +64,7 @@ section {
 }
 
 .about img {
-    max-width: 50%;
+    max-width: 30%;
     margin-right: 20px;
 }
 
@@ -62,31 +77,41 @@ section {
     padding: 0;
 }
 
-.projects ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-
 .about p {
     font-size: 18px;
     margin: 0;
     padding: 10px 0;
 }
+/* Projects section styles */
+
 .projects ul {
+	list-style: none;
+	margin: 30px auto;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+/* .projects ul {
     list-style: none;
     margin: 0;
     padding: 0;
-}
-.projects li {
+} */
+
+/* .projects li {
     margin: 20px 0;
-}
+} */
+
+
 .projects h2 {
     font-size: 24px;
     margin: 0 0 20px;
     padding: 0;
 }
+
+/* Blog section styles */
+
 .blog ul {
     list-style: none;
     margin: 0;
@@ -100,6 +125,9 @@ section {
     margin: 0 0 20px;
     padding: 0;
 }
+
+/* Contact section styles */
+
 .contact {
     display: flex;
     align-items: center;
@@ -112,6 +140,66 @@ section {
     padding: 10px 0;
 }
 
+.contact div {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
 .footer {
     background-color: navy;
+}
+
+/* Media queries /
+@media only screen and (max-width: 768px) {
+/ Header styles */
+header {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    }
+
+@media only screen and (max-width: 576px) {
+    header {
+    height: 120px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    header h1 {
+    font-size: 24px;
+    }
+    }
+    /* Mobile menu styles */
+    .mobile-menu {
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background-color: #333;
+    width: 100%;
+    z-index: 1;
+    }
+    .mobile-menu a {
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-bottom: 1px solid #fff;
+    }
+    .mobile-menu a:last-child {
+    border-bottom: none;
+    }
+    @media only screen and (max-width: 768px) {
+    header {
+    height: auto;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    .mobile-menu {
+    display: none;
+    }
 }
