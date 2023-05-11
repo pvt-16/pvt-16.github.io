@@ -1,6 +1,6 @@
 body {
 			background-color: #F5E5D7;
-			font-family: Arial, sans-serif;
+			font-family: Times New Roman, sans-serif;
 			color: #454545;
 			margin: 0;
 			padding: 0;
@@ -27,7 +27,7 @@ body {
 			text-decoration: none;
 		}
 		a:hover {
-			text-decoration: underline;
+			text-decoration: bold;
 		}
 		ul {
 			list-style: none;
