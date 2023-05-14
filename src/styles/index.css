@@ -1,4 +1,7 @@
 body {
+    background-image: url('/src/img/backgroundcrop.jpeg');
+    background-size: cover;
+    background-position: center;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
